@@ -1,0 +1,26 @@
+body {
+    background: #261E1C;
+    color: #FAFAFA;
+}
+
+header {
+    background: blue;
+}
+
+nav {
+    background: green;
+}
+
+footer {
+    background: blueviolet;
+    height: 50px;
+}
+
+.heading {
+    color: #A59A8B;
+}
+
+.table {
+    width: 100%;
+    border: 1px solid #FAFAFA;
+}
