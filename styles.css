@@ -1,26 +1,152 @@
 body {
-    background: #261E1C;
-    color: #FAFAFA;
+  background-color: #fafafa;
+  font-family: "Verdana";
+  margin: 0;
 }
 
-header {
-    background: blue;
+/* reset UL margins */
+ul {
+  list-style-type: none;
+  padding-left: 10px;
+  margin-block: 0;
 }
 
-nav {
-    background: green;
+a {
+  text-decoration: none;
+  color: unset;
 }
 
-footer {
-    background: blueviolet;
-    height: 50px;
+/* List */
+.list {
+  margin: 20px 0;
+  /* TODO: revizuieste asta */
 }
 
-.heading {
-    color: #A59A8B;
+.list-item {
+  font-size: 20px;
+  font-family: "Verdana";
+  margin-bottom: 10px;
 }
 
-.table {
-    width: 100%;
-    border: 1px solid #FAFAFA;
+.active {
+  background-color: coral;
 }
+
+/* Navbar */
+.navbar {
+  background-color: #264245;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-item {
+  color: #fafafa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0 20px;
+}
+
+.brand {
+  margin-right: auto;
+}
+/* End of Navbar */
+
+/* Header */
+.banner {
+  height: 70vh;
+  background-image: url("./img/rain-water-green-leaf-macro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-text {
+  color: #fafafa;
+  letter-spacing: -1.5px;
+  text-transform: lowercase;
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+}
+/* End of Header */
+
+/* Summary */
+.summary-section {
+  color: #fafafa;
+  font-size: 12px;
+  padding: 50px 150px;
+}
+/* End of summary */
+
+/* 
+Helper 
+- use them as "tools" or reusable tools / classes
+*/
+.text-center {
+  text-align: center;
+}
+
+.background-dark {
+  background-color: #264245;
+}
+/* End of Helper */
+
+/* Cards */
+.cards-section {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 500px;
+  width: 250px;
+  color: #fafafa;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-header {
+  text-align: center;
+  font-family: monospace;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.card-pricing-image {
+  background-image: url("https://img.freepik.com/free-vector/illustration-label-tag_53876-5901.jpg?w=826&t=st=1696872434~exp=1696873034~hmac=eeb642f82cae8b92e57da55197bda98015fa07180e380a5dff3eb973fea05cb3");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-footer {
+  text-align: center;
+}
+/* End of Cards */
+
+
+/* Footer */
+.footer {
+  color: #fafafa;
+}
+
+.footer-section {
+  padding: 20px;
+}
+/* End of Footer */

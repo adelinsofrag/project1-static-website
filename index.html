@@ -4,74 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proiect 1 - Home</title>
+
     <!-- Link spre fisierul din care primim CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header>
-      <h1 class="heading">This is the header.</h1>
-    </header>
 
+  <body>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="comingsoon.html">Coming Soon</a></li>
+      <ul class="navbar">
+        <li class="navbar-item brand">
+          <a href="./index.html">eShop</a>
+        </li>
+        <li class="navbar-item"><a href="./about.html">About Us</a></li>
+        <li class="navbar-item"><a href="./comingsoon.html">Coming Soon</a></li>
       </ul>
     </nav>
 
-    <main>
-      <h2 class="heading">Hello World!</h2>
-      <p>Main</p>
+    <header>
+      <div class="banner">
+        <h1 class="banner-text">This is the header.</h1>
+      </div>
+    </header>
 
+    <main>
       <section>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Sed arcu non odio euismod lacinia at. Auctor augue
-          mauris augue neque gravida. Porttitor rhoncus dolor purus non enim. Elementum pulvinar
-          etiam non quam lacus suspendisse faucibus. Nibh sed pulvinar proin gravida. Penatibus et
-          magnis dis parturient montes nascetur ridiculus mus. Est velit egestas dui id ornare arcu
-          odio ut. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Massa
-          placerat duis ultricies lacus sed turpis. Cursus eget nunc scelerisque viverra mauris in
-          aliquam sem fringilla. Orci dapibus ultrices in iaculis nunc. Nec feugiat nisl pretium
-          fusce id velit. In fermentum et sollicitudin ac orci phasellus egestas. Eros in cursus
-          turpis massa tincidunt dui ut ornare.
-        </p>
-        <img
-          src="./img/rain-water-green-leaf-macro.jpg"
-          alt="Free photo rain water on a green leaf macro."
-        />
+        <div class="summary-section background-dark">
+          <h3 class="text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ut voluptatibus illum
+            alias!
+          </h3>
+        </div>
       </section>
 
       <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur explicabo sequi dicta!
-          Officia nisi cumque ipsum magnam voluptatum maxime, quisquam nam, harum ut facilis minima,
-          ipsa corrupti eum ratione eveniet?
-        </p>
-
-        <table class="table">
-          <tr>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
-          </tr>
-          <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-          </tr>
-          <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-          </tr>
-        </table>
+        <div class="cards-section">
+          <div class="card background-dark">
+            <div class="card-header">This is Card A</div>
+            <div class="card-body">
+              <div class="card-pricing-image"></div>
+              <p>Testing card.</p>
+            </div>
+            <div class="card-footer">A - footer</div>
+          </div>
+          <div class="card background-dark">
+            <div class="card-header">This is Card B</div>
+            <div class="card-body">
+              <div class="card-pricing-image"></div>
+              <p>Testing card.</p>
+            </div>
+            <div class="card-footer">B - footer</div>
+          </div>
+          <div class="card background-dark">
+            <div class="card-header">This is Card C</div>
+            <div class="card-body">
+              <div class="card-pricing-image"></div>
+              <p>Testing card.</p>
+            </div>
+            <div class="card-footer">C - footer</div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>Footer</p>
+    <footer class="footer">
+      <div class="footer-section background-dark">
+        <p class="footer-text">Footer</p>
+      </div>
     </footer>
   </body>
 </html>
