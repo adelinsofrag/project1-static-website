@@ -140,7 +140,6 @@ Helper
 }
 /* End of Cards */
 
-
 /* Footer */
 .footer {
   color: #fafafa;
@@ -150,3 +149,50 @@ Helper
   padding: 20px;
 }
 /* End of Footer */
+
+/* Overview */
+.overview-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image {
+  border-radius: 5px;
+  box-shadow: 4px 6px 29px -7px #264245;
+}
+
+.overview-text {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+/* End of Overview */
+
+/* Articles */
+.article-container {
+  display: flex;
+  padding: 20px;
+}
+
+.article-title {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.article-title:nth-child(n+1) {
+  flex-direction: column-reverse;
+}
+
+.article-heading {
+  order: 1;
+  text-align: center;
+}
+
+.article-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+/* End of Articles */
