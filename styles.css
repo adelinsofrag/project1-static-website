@@ -91,6 +91,10 @@ Helper
 .background-dark {
   background-color: #264245;
 }
+
+.font-smaller {
+  font-size: smaller;
+}
 /* End of Helper */
 
 /* Cards */
@@ -147,6 +151,32 @@ Helper
 
 .footer-section {
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 2;
+}
+
+.footer-menu-list > * {
+  margin-bottom: 15px;
+}
+
+.footer-menu-list > *:hover {
+  background-color: #fafafa;
+  color: #264245;
+  display: flex;
+  border-radius: 5px;
+}
+
+.footer-menu-link {
+  display: flex;
+  border: 1px solid #fafafa;
+  border-radius: 5px;
+  padding: 5px;
 }
 /* End of Footer */
 
@@ -179,9 +209,10 @@ Helper
   display: flex;
   flex-direction: column;
 }
- 
-.article-title:nth-child(n+1) {
-  flex-direction: column-reverse;
+
+/* .article-title:nth-child(n+1) { */
+div.article-container:nth-child(odd) {
+  flex-direction: row-reverse;
 }
 
 .article-heading {
@@ -196,3 +227,11 @@ Helper
   padding: 0 50px 0 50px;
 }
 /* End of Articles */
+
+/* Media query definition */
+@media (min-width: 1025px) {
+  main {
+    width: 1024px;
+    margin: auto;
+  }
+}
